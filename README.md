@@ -8,9 +8,8 @@
 - affichage du discriminant
 
 ## v.3
-- concaténation plus jolie (sans les espaces en trop)
-<<<<<<< HEAD
-- nombre négatif
-=======
-- nombre négatif
->>>>>>> ff6cbbc6502c43731a29b333cc265e80c38d32a1
+- concaténation plus jolie (suppression espace indésirable)
+- nombre négatif supportés
+
+## v.4
+- graphique de la fonction

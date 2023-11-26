@@ -32,7 +32,7 @@ elif d==0:
     else:
         print(f"la forme factorisé est : (x+{x})²")
 elif d<0:
-    print("il n'y a pas de solution")
+    print("il n'y a pas de racine")
 
 # calcul forme canonique
 if a>1:
@@ -57,3 +57,28 @@ else:
         print(f"la forme canonique est : {a}(x{alpha2}){chiffre2}")
     else:
         print(f"la forme canonique est : {a}(x+{alpha2})+{chiffre2}")
+
+# enlever tout ce qui suit pour les versions calculatrice :
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Définir la fonction quadratique
+def fonction_quadratique(x):
+    return a*x**2 + b*x + c
+
+# Générer des valeurs de x
+x_values = np.linspace(-100, 100, 100)
+
+# Calculer les valeurs de y en utilisant la fonction quadratique
+y_values = fonction_quadratique(x_values)
+
+# Tracer le graphique
+plt.plot(x_values, y_values, label=f'{a}x^2 + {b}x + {c}')
+plt.axhline(0, color='black',linewidth=0.5)
+plt.axvline(0, color='black',linewidth=0.5)
+plt.grid(color = 'gray', linestyle = '--', linewidth = 0.5)
+plt.title('Graphique de la fonction quadratique')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.show()
