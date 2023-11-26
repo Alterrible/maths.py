@@ -7,5 +7,6 @@ ajout de la forme factorisé
 ajout de la forme canonique
 affichage du discriminant
 
-## v.2.1
+## v.3
 concaténation plus jolie (sans les espaces en trop)
+nombre négatif
