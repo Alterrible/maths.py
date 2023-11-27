@@ -13,3 +13,7 @@
 
 ## v.4
 - graphique de la fonction
+
+## v.4.1
+- débogage sommet de la courbe
+- suppression graphique
