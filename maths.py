@@ -4,6 +4,7 @@ from math import*
 a=float(input("a:"))
 b=float(input("b:"))
 c=float(input("c:"))
+sage=str(input("avez vous été sage cette année ?  ")) # Christmas update
 
 # la fonction qui peut servir pour plus tard
 def f(X):
@@ -64,3 +65,20 @@ else:
     else:
         print(f"la forme canonique est : {a}(x+{alpha2})+{chiffre2}")
     print(f"Les coordonnées du sommet sont : ({alpha2};{beta})")
+
+# Christmas update
+sapin = [
+    [None, None, None, "*", None, None, None],
+    [None, None, None, "-", None, None, None],
+    [None, None, "-", "-", "-", None, None],
+    [None, "-", "-", "-", "-", "-", None],
+    ["-", "-", "-", "-", "-", "-", "-"],
+    [None, None, None, "-", None, None, None]
+]
+
+if sage=="oui" or "OUI" or "Oui":
+    for row in sapin:
+        print(' '.join(str(e) if e else ' ' for e in row))
+    print("joyeux noël")
+else:
+    print("RIP")

@@ -17,3 +17,6 @@
 ## v.4.1
 - débogage sommet de la courbe
 - suppression graphique
+
+## Christmas update
+- le sapin
